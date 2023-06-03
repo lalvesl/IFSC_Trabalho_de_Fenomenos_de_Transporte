@@ -18,10 +18,10 @@ jobs:
           root_file: monografia.tex
 
       - name: Renomeando o PDF
-        run: mv monografia.pdf monografia-$GITHUB_REF_NAME.pdf
+        run: mv monografia.pdf monografia-${{github.ref_name}}.pdf
 
       - name: Publicando PDF
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: monografia-$GITHUB_REF_NAME.pdf
+          files: monografia-${{github.ref_name}}.pdf
