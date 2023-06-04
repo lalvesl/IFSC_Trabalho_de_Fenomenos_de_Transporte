@@ -1,5 +1,8 @@
 name: Compilação do PDF
 
+permissions:
+  contents: write
+
 on:
   push:
     tags:
