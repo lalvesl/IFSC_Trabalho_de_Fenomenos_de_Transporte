@@ -104,13 +104,16 @@
 \renewcommand{\imprimircapa}{%
   \begin{capa}%
     \center
-    \ABNTEXchapterfont\Large INSTITUTO FEDERAL DE SANTA CATARINA
+    \includegraphics[scale=.7]{./figuras/ifsc-vWithoutCampus.png}\\
+    \ABNTEXchapterfont{Câmpus}\\
+    \ABNTEXchapterfont{Jaraguá do Sul - Rau}
+    %\ABNTEXchapterfont\Large INSTITUTO FEDERAL DE SANTA CATARINA
     
-    \vspace*{1cm}
+    \vspace*{2cm}
     
     {\ABNTEXchapterfont\large\MakeUppercase{\imprimirautor}}
 
-    \vfill
+    \vspace*{2cm}
     \begin{center}
     \ABNTEXchapterfont\bfseries\LARGE\imprimirtitulo
     \end{center}
