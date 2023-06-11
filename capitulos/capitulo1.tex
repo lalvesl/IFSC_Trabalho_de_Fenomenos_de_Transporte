@@ -4,15 +4,49 @@ Este relatório tem como objetivo principal apresentar uma análise numérica do
 
 O estudo se concentra em aletas planas unidimensionais e tem como objetivo determinar os principais fatores que influenciam a transferência de calor nesses tipos de superfícies. A análise será feita por meio de simulações numéricas que permitirão quantificar a transferência de calor e avaliar a eficiência das aletas em dissipar o calor de forma adequada.
 
-Assim, na introdução contextualize o tema, delimite o assunto, apresente um rápido histórico do problema e das soluções porventura já apresentadas, com breve revisão crítica das investigações anteriores; faça referência às fontes de material, aos métodos seguidos, às teorias ou aos conceitos que embasam o desenvolvimento e a argumentação, às eventuais faltas de informação, ao instrumental utilizado. A introdução deverá conter, ainda:
+Dentro do escopo do objetivo principal, foram definidos alguns objetivos específicos:
 
 \begin{itemize}
-   \item Justificativa -- trata-se da relevância, o motivo pelo qual tal pesquisa deve ser realizada. Justifica-se aqui a escolha do tema, a delimitação feita e a relação que o pesquisador possui com ele. Procura-se demonstrar a legitimidade, a pertinência, o interesse e a capacidade do pesquisador em lidar com o referido tema. Deve-se fazer o mesmo em relação ao problema e à hipótese, mostrando a relevância científica do tema para o pesquisador. Deve-se fazer, então, nesta parte, a justificativa para o tema, para o problema e para a hipótese, nos termos em que foram formulados na fase de elaboração do projeto de pesquisa;
+   \item Determinar a temperatura da superfície da base da aleta (Tb);
    
-   \item Definição do problema -- um problema decorre de um aprofundamento do tema. Ele deve delimitar a pesquisa. Diversos autores sugerem que o problema deve ter algumas características, tais como: a) deve ser formulado como pergunta - isso facilita sua identificação por quem consulta o projeto de pesquisa; b) deve ser claro e preciso; c) deve ser delimitado a uma dimensão variável, pois muitas vezes, o problema é formulado de uma maneira muito ampla, impossível de ser investigado 
+   \item Determinar a taxa de transferência de calor de cada tipo de aleta (qa);
    
-   \item Objetivo geral e objetivos específicos -- detalhado dentro das seções abaixo.
+   \item Determinar a temperatura na ponta da aleta;
+   
+   \item Determinar a efetividade ({\large \(\epsilon\)}) da superfície estendida. Caso a aleta apresente ({\large\(\epsilon\)}1>2);
+
+   \item Determinar a eficiência da aleta ({\large\(\eta\)}a);
+   
+   \item Determinar a eficiência global do conjunto aletado ({\large\({\eta}\)}o).
 \end{itemize}
+
+Para os cálculos, algumas grandezas foram fornecidas para facilitar na realização do trabalho.
+
+\begin{table}[htb]
+   \ABNTEXfontereduzida
+   \centering
+   \caption{Grandezas fornecidas}
+   \label{tab:grandezasFornecidas}
+   \begin{tabular}{p{8.15cm} r R{2.3cm}}\toprule
+      Descrição & Grandeza & Valor\\
+      \midrule
+      Temperatura da superfície & \(T1\) & \SI{110}\degreeCelsius \\
+      Temperatura do fluido ambiente em torno do conjunto & \(T\infty\) & \SI{30}\degreeCelsius \\
+      Coeficiente de transferência de calor por convecção & \(h\) & \SI{20}{\watt\per\square\meter\per\kelvin} \\
+      \bottomrule
+   \end{tabular}
+   \fonteproprioautor
+\end{table}
+
+apresentadas
+ 
+\begin{figure}[ht]
+	\centering
+	\caption{Tabela propriedades termofísicas de sólidos metálicos selecionados}\label{fig:metalProps}
+	\includegraphics[width=15cm]{figuras/metalProps.jpg}
+    \fonte{\citeonline{uspTabelasTermodinamicas}}
+\end{figure}
+
 
 \section{Objetivos}
 

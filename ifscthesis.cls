@@ -34,6 +34,7 @@
 %-----------------------------------------------%
 % Pacotes 
 %-----------------------------------------------%
+%\RequirePackage{greek}
 \RequirePackage{lmodern}		  	% Usa a fonte Latin Modern			
 \RequirePackage[T1]{fontenc}		% Selecao de codigos de fonte.
 \RequirePackage[utf8]{inputenc}	% Codificacao do documento (conversão automática dos acentos)
@@ -253,7 +254,7 @@
 \newcommand{\fonteproprioautor}{
 \vspace{-1ex}
 \small
-\center{Fonte: Elaborada pelo autor.}}
+\center{Fonte: Elaborada pelos autores.}}
 %-----------------------------------------------%
 
 
