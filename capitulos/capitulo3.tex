@@ -4,16 +4,16 @@
 
 Realizado análize para aleta Infinita, obtida através da relação:\\
 \begin{equation}
-    {m}{L}\geq{2.65}
+    {m}{L}\geq{2,65}
 \end{equation}
 \begin{equation}
-    {L}\geq{\frac{2.65}{m}}
+    {L}\geq{\frac{2,65}{m}}
 \end{equation}
 \begin{equation}
-    {L}\geq{\frac{2.65}{12.311 }}
+    {L}\geq{\frac{2,65}{12,311 }}
 \end{equation}
 \begin{equation}
-    {L}\geq{\SI{0.21522496}\meter}
+    {L}\geq{\SI{0,21522496}\meter}
 \end{equation}
 Como o comprimento tatal de \(0.0185\) é inferior ao obtido pelo cálculo da aleta infinita, o método não pode ser usado para a valição desta geometria.
 
@@ -25,16 +25,46 @@ Como o comprimento tatal de \(0.0185\) é inferior ao obtido pelo cálculo da al
 
 \begin{figure}[h]
     \centering
-    \caption{Representação das resistências térmicas. aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa}
+    \caption{Representação das resistências térmicas.}
     \label{fig:res}
-    \includegraphics[width=14cm]{figuras/metalProps.jpg}
+    \includegraphics[width=14cm]{figuras/resistenciasTermicas.jpeg}
     \fonteproprioautor
 \end{figure}
 
 Isolando o Tb chegamos ao resultado de:
 \begin{equation}
-    {Tb}={\frac{T1 -T\infty}{{R1}+{R2}}}-{T1} = \SI{109.989}{\degreeCelsius}
+    {Tb}={\frac{T1 -T\infty}{{R1}+{R2}}}-{T1} = \SI{109,989}{\degreeCelsius}
 \end{equation}
 
-\section{Determinar a taxa de transferência de calor de cada tipo de aleta (qa)}\label{sec:prob1}
+\clearpage
 
+\section{Determinar a taxa de transferência de calor de cada tipo de aleta (qa)}\label{sec:calcTable}
+
+\begin{figure}[h]
+    \centering
+    \caption{Tabela com condições de cálculos para superfícies estendidas.}
+    \label{fig:tabelaCasosCalc}
+    \includegraphics[width=15cm]{figuras/tabelaCasosCalc.jpg}
+    \fonteproprioautor
+\end{figure}
+
+Foi escolhida as equações do caso \(A\), pelo fato das equações
+\(D\) aleta inifita resultar em um valor muito acima do comprimeto da
+geometria,
+\(B\) por não conter superfícies adiabáticas
+e \(C\) .....................
+
+\begin{itemize}[leftmargin=2cm]
+    \item Perímetro da aleta: \(
+        {P}={2w+2t} = \SI{10,8}{\milli\meter}
+    \)
+    \item Diferença de temperatura: \(
+        {\theta}b={{Tb}-{T\infty}} = \SI{79,989}{\degreeCelsius}
+    \)
+    \item Área da seção transversal da aleta: \(
+        {Atr}={{w}{t}} = \SI{12,311}{\per\meter}
+    \)
+    \item Valor \(M\): \(
+        {M}={\sqrt[2]{{h}{P}{k}{Atr}}} = \SI{1,403}{\watt}
+    \)
+\end{itemize}
