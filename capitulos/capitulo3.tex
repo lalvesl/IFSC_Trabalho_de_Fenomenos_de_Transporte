@@ -13,9 +13,12 @@ Realizado análize para aleta Infinita, obtida através da relação:\\
     {L}\geq{\frac{2,65}{12,311 }}
 \end{equation}
 \begin{equation}
-    {L}\geq{\SI{0,21522496}\meter}
+    {L}\geq{0,21522496\,\SI{}{\meter}}
 \end{equation}
-Como o comprimento tatal de \(0.0185\) é inferior ao obtido pelo cálculo da aleta infinita, o método não pode ser usado para a valição desta geometria.
+Para que hipótese da aleta infinita fosse válida, a aleta deveria ter um
+comprimento maior ou igual a 21,522496 cm.
+Neste caso a geometria 3 apresenta comprimento menor, embasando a
+escolha da utilização do cálculo de contorno A.
 
 \section{Determinar a temperatura da superfície da base da aleta (Tb)}\label{sec:prob1}
 
@@ -73,7 +76,7 @@ e \(C\) ..................... Preciso escrever mais alguma coisa aqui, não lemb
           \frac
           {\sinh{(mL1)}+{\frac{(h)}{(mk)}}{\cosh{(mL1)}}}
           {\cosh{(mL1)}+{\frac{(h)}{(mk)}}{\sinh{(mL1)}}}
-          }={\SI{0,3223}{\watt}}
+          }={0,3223\,\SI{}{\watt}}
           \)
 \end{itemize}
 
@@ -126,11 +129,42 @@ Não houve a necessidade de realizar melhorias, pois \({\epsilon}a>{2}\).
 
 \begin{itemize}[leftmargin=2cm]
     \item Áreas das aletas: \(
-          {Aa}={{L1}{P}+{Atr}} = \SI{205,813}{\micro\square\meter}
+          {Aa}={{L1}{P}+{Atr}} = 0,0002058131\,\SI{}{\square\meter}
           \)
     \item Eficiência da aleta: \(
           {\eta}a=
           {\frac{qa}{{h}{Aa1}{\theta}b}}{100\%}=
           {\SI{98,20}{\percent}}
           \)
+\end{itemize}
+
+\section{
+  Determinar a eficiência global
+  do conjunto aletado (\(\eta\)o)
+ }\label{sec:f}
+
+\begin{itemize}[leftmargin=2cm]
+    \item Área total (aletas + espaço sem aletas): \(
+          {AT}={{Aa}{N}+{Ab}} = {0,0112849}m
+          \)
+    \item Taxa total da transferência de calor: \(
+          {qt}=
+          {{N}{{\eta}a}{h}{Aa}{{\theta}b}}+{{h}{Ab}{{\theta}b}}=
+              {17,769\,\SI{}\watt}
+          \)
+    \item Eficiência global do conjunto aletado: \(
+          {\eta}o=
+          {\frac{qt}{{h}{Aa1}{\theta}b}}{100\%}=
+          {\SI{98,43}{\percent}}
+          \)
+\end{itemize}
+
+\section{
+  Resultados
+ }\label{sec:results}
+
+ O resultados foram satisfatórios pois a aleta apresentou valores de:
+ \begin{itemize}[leftmargin=2cm]
+    \item Efetividade \boldmath\(> 2\), não havendo a necessidade realizar melhorias;
+    \item Eficiência global de \boldmath\(98,43\,\%\).
 \end{itemize}
