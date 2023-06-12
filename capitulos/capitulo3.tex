@@ -52,19 +52,85 @@ Foi escolhida as equações do caso \(A\), pelo fato das equações
 \(D\) aleta inifita resultar em um valor muito acima do comprimeto da
 geometria,
 \(B\) por não conter superfícies adiabáticas
-e \(C\) .....................
+e \(C\) ..................... Preciso escrever mais alguma coisa aqui, não lembro o motivo que o professor falou para não usarmos a equação do C, apenas lembro que ele falou que ninguém vai usar e pronto.
 
 \begin{itemize}[leftmargin=2cm]
     \item Perímetro da aleta: \(
-        {P}={2w+2t} = \SI{10,8}{\milli\meter}
-    \)
+          {P}={2w+2t} = \SI{10,8}{\milli\meter}
+          \)
     \item Diferença de temperatura: \(
-        {\theta}b={{Tb}-{T\infty}} = \SI{79,989}{\degreeCelsius}
-    \)
+          {\theta}b={{Tb}-{T\infty}} = \SI{79,989}{\degreeCelsius}
+          \)
     \item Área da seção transversal da aleta: \(
-        {Atr}={{w}{t}} = \SI{12,311}{\per\meter}
-    \)
+          {Atr}={{w}{t}} = \SI{12,311}{\per\meter}
+          \)
     \item Valor \(M\): \(
-        {M}={\sqrt[2]{{h}{P}{k}{Atr}}} = \SI{1,403}{\watt}
-    \)
+          {M}={\sqrt[]{{h}{P}{k}{Atr}}} = \SI{1,403}{\watt}
+          \)
+    \item Taxa de transferência
+          de calor da aleta: \\\(
+          {qa}={M}{
+          \frac
+          {\sinh{(mL1)}+{\frac{(h)}{(mk)}}{\cosh{(mL1)}}}
+          {\cosh{(mL1)}+{\frac{(h)}{(mk)}}{\sinh{(mL1)}}}
+          }={\SI{0,3223}{\watt}}
+          \)
+\end{itemize}
+
+\section{Determinar a temperatura na
+  ponta da aleta}\label{sec:C}
+\begin{equation}
+    {\frac{\theta}{{\theta}b}}=
+    {\frac
+    {T(x)-{T\infty}}
+    {Tb-{T\infty}}
+    }=
+    {
+    \frac
+    {\cosh{(m(L-x))}+{\frac{(h)}{(mk)}}{\sinh{(m(L-x))}}}
+    {\cosh{(mL)}+{\frac{(h)}{(mk)}}{\sinh{(m(L-x))}}}
+    }
+\end{equation}
+Isolando o \(tx\) obtém-se:
+\begin{equation}
+    {Ta(x)}=
+    {
+    \frac
+    {\cosh{(m(L-x))}+{\frac{(h)}{(mk)}}{\sinh{(m(L-x))}}}
+    {\cosh{(mL)}+{\frac{(h)}{(mk)}}{\sinh{(m(L-x))}}}
+    }+
+    {\theta}+
+    {T\infty}=
+    \SI{107,839}{\degreeCelsius}
+\end{equation}
+
+\clearpage
+
+\section{ Determinar a efetividade (\(\epsilon\)) da
+  superfície estendida}\label{sec:d}
+
+\begin{equation}
+    {{\epsilon}a}=
+        {
+            \frac
+            {{qa1}}
+            {{h}{Atrb}{\theta}b}
+        }=
+        {\SI{33,613}{}}
+\end{equation}
+Não houve a necessidade de realizar melhorias, pois \({\epsilon}a>{2}\).
+
+\section{
+  Determinar a eficiência da aleta (\(\eta\)a)
+ }\label{sec:e}
+
+\begin{itemize}[leftmargin=2cm]
+    \item Áreas das aletas: \(
+          {Aa}={{L1}{P}+{Atr}} = \SI{205,813}{\micro\square\meter}
+          \)
+    \item Eficiência da aleta: \(
+          {\eta}a=
+          {\frac{qa}{{h}{Aa1}{\theta}b}}{100\%}=
+          {\SI{98,20}{\percent}}
+          \)
 \end{itemize}
