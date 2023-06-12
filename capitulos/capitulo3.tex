@@ -51,11 +51,13 @@ Isolando o Tb chegamos ao resultado de:
     \fonte{\cite{antonietti}}
 \end{figure}
 
-Foi escolhida as equações do caso \(A\), pelo fato das equações
+Foi escolhida a equações do caso \(A\), pelo fato das equações
 \(D\) aleta inifita resultar em um valor muito acima do comprimeto da
 geometria,
 \(B\) por não conter superfícies adiabáticas
-e \(C\) por não conter uma temperatura especificada na parcela estendida
+e \(C\) por não conter uma temperatura especificada na parcela estendida.
+\par No caso da equação \(A\), necessita-se dos seguintes valores
+para prosseguimento com os cálculos:
 \begin{itemize}[leftmargin=2cm]
     \item Perímetro da aleta: \(
           {P}={2w+2t} = \SI{10,8}{\milli\meter}
@@ -120,7 +122,7 @@ Isolando o \(tx\) obtém-se:
         }=
         {\SI{33,613}{}}
 \end{equation}
-Não houve a necessidade de realizar melhorias, pois \({\epsilon}a>{2}\).
+\par Não houve a necessidade de realizar melhorias, pois \({\epsilon}a>{2}\).
 
 \section{
   Determinar a eficiência da aleta (\(\eta\)a)
@@ -142,9 +144,15 @@ Não houve a necessidade de realizar melhorias, pois \({\epsilon}a>{2}\).
   do conjunto aletado (\(\eta\)o)
  }\label{sec:f}
 
+\par O conjunto aletado global compreende toda a geometria desde a base até todas as superfícies estendidas e 
+para determinarmos a eficiência de todo esse conjunto
+apenas necessita-se somar a energia transmitida da base
+como a energia dissipada por todas as aletas.
+A eficiência provem da razão entre da energia  dissipada e a energia dissipada por convecção:
+
 \begin{itemize}[leftmargin=2cm]
     \item Área total (aletas + espaço sem aletas): \(
-          {AT}={{Aa}{N}+{Ab}} = {0,0112849}m
+          {At}={{Aa}{N}+{Ab}} = {0,0112849}\,\SI{}{\square\meter}
           \)
     \item Taxa total da transferência de calor: \(
           {qt}=
@@ -153,7 +161,7 @@ Não houve a necessidade de realizar melhorias, pois \({\epsilon}a>{2}\).
           \)
     \item Eficiência global do conjunto aletado: \(
           {\eta}o=
-          {\frac{qt}{{h}{Aa1}{\theta}b}}{100\%}=
+          {\frac{qt}{{h}{At}{\theta}b}}{100\%}=
           {\SI{98,43}{\percent}}
           \)
 \end{itemize}
