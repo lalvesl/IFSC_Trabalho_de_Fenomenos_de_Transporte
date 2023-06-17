@@ -92,7 +92,7 @@
 \pagestyle{cabecalholimpo}
 
 %\input{superCap/superCap.tex}
-
+%\input{capitulos/capitulo0.tex}
 \input{capitulos/capitulo1.tex}
 \input{capitulos/capitulo2.tex}
 \input{capitulos/capitulo3.tex}
@@ -108,7 +108,12 @@
 %-----------------------------------------------%
 % Referências bibliográficas
 %-----------------------------------------------%
-\bibliography{referencias}
+\begingroup
+	\let\clearpage\relax
+	\vspace{-0.3cm}
+	\bibliography{referencias}
+\endgroup
+%\bibliography{referencias}
 
 
 %-----------------------------------------------%

@@ -1,7 +1,7 @@
-{\let\clearpage\relax\chapter{Cálculos}\label{cap:calculus}}
+\vspace{-0.1cm}{\let\clearpage\relax\chapter{Cálculos}\label{cap:calculus}}
 %\chapter{Cálculos}\label{cap:calculus}
 
-\section{Cálculo para aleta Infinita}\label{sec:infity}
+\vspace{-1.5cm}\section{Cálculo para aleta Infinita}\label{sec:infity}
 
 Realizado análise para aleta Infinita, obtida através da relação:\\
 \begin{equation}
@@ -20,15 +20,15 @@ Realizado análise para aleta Infinita, obtida através da relação:\\
 comprimento maior ou igual a 21,522496 cm.
 Neste caso a geometria 3 apresenta comprimento menor, embasando a
 escolha da utilização do cálculo de contorno A.
-\\
-\\
+\newline
+\newline
 {\ABNTEXchapterfont\Large{A) Determinar a temperatura da superfície da base da aleta (Tb)}}\\
 %\section{Determinar a temperatura da superfície da base da aleta (Tb)}\label{sec:prob1}
 Apropriando-se da equação da taxa de transferência de calor e isolando Tb (temperatura da base), com espessura da base em 0,0015m e taxa constante ao longo do eixo x, tem-se:
 \begin{equation}
     {qx}={\frac{T\infty-Ts1}{1/{h1}}}={\frac{Ts1-Ts2}{L/{{k}{A}}}}={\frac{Ts2-T\infty2}{1/{h2}{A}}}
 \end{equation}
-
+\vspace{-1cm}
 \begin{figure}[h]
     \centering
     \caption{Representação das resistências térmicas.}
@@ -41,7 +41,7 @@ Isolando o Tb chegamos ao resultado de:
 \begin{equation}
     {Tb}={\frac{T1 -T\infty}{{R1}+{R2}}}-{T1} = \SI{109,989}{\degreeCelsius}
 \end{equation}
-\\
+
 {\ABNTEXchapterfont\Large{B) Determinar a taxa de transferência de calor de cada tipo de aleta (qa)}}
 %\section{Determinar a taxa de transferência de calor de cada tipo de aleta (qa)}\label{sec:calcTable}
 
@@ -49,7 +49,8 @@ Isolando o Tb chegamos ao resultado de:
     \centering
     \caption{Tabela com condições de cálculos para superfícies estendidas.}
     \label{fig:tabelaCasosCalc}
-    \includegraphics[width=15cm]{figuras/tabelaCasosCalc.jpg}
+    \includegraphics[width=10cm]{figuras/tabelaCasosCalc.jpg}
+    \fonte{\cite{theodore}}
 \end{figure}
 
 Foi escolhida a equações do caso \(A\), pelo fato das equações
@@ -81,6 +82,7 @@ para prosseguimento com os cálculos:
           }={0,3223\,\SI{}{\watt}}
           \)
 \end{itemize}
+\vspace{-1cm}
 {\ABNTEXchapterfont\Large\vspace{1cm}{C) Determinar a temperatura na ponta da aleta}}
 %\section{Determinar a temperatura na ponta da aleta}\label{sec:C}
 \begin{equation}
@@ -100,8 +102,8 @@ Isolando o \(tx\) obtém-se:
     {Ta(x)}=
     {
     \frac
-    {\cosh{(m(L-x))}+{\frac{(h)}{(mk)}}{\sinh{(m(L-x))}}}
-    {\cosh{(mL)}+{\frac{(h)}{(mk)}}{\sinh{(m(L-x))}}}
+    {\cosh{(m(La-x))}+{\frac{(h)}{(mk)}}{\sinh{(m(La-x))}}}
+    {\cosh{(mLa)}+{\frac{(h)}{(mk)}}{\sinh{(m(La-x))}}}
     }+
     {\theta}+
     {T\infty}=
@@ -116,20 +118,20 @@ transferência de calor que existiria sem a presença da aleta
     {{\epsilon}a}=
         {
             \frac
-            {{qa1}}
+            {{qa}}
             {{h}{Atrb}{\theta}b}
         }=
         {\SI{33,613}{}}
 \end{equation}
 \par Não houve a necessidade de realizar melhorias, pois \({\epsilon}a>{2}\).
-\\
-\\
+\newline
+\newline
 {\ABNTEXchapterfont\Large{E) Determinar a eficiência da aleta (\(\eta\)a)}}
 %\section{Determinar a eficiência da aleta (\(\eta\)a)}\label{sec:e}
 
 \begin{itemize}[leftmargin=2cm]
     \item Áreas das aletas: \(
-          {Aa}={{L1}{P}+{Atr}} = 0,0002058131\,\SI{}{\square\meter}
+          {Aa}={{La}{P}+{Atr}} = 0,0002058131\,\SI{}{\square\meter}
           \)
     \item Eficiência da aleta: \(
           {\eta}a=
@@ -137,8 +139,8 @@ transferência de calor que existiria sem a presença da aleta
           {\SI{98,20}{\percent}}
           \)
 \end{itemize}.
-\\
-\\
+\newline
+\vspace{-1cm}\newline
 {\ABNTEXchapterfont\Large{F) Determinar a eficiência global do conjunto aletado (\(\eta\)o)}}
 %\section{Determinar a eficiência global do conjunto aletado (\(\eta\)o)}\label{sec:f}
 
@@ -163,13 +165,14 @@ A eficiência provem da razão entre da energia  dissipada e a energia transport
           {\SI{98,43}{\percent}}
           \)
 \end{itemize}
-
+\vspace{-0.6cm}
 \section{
   Resultados
  }\label{sec:results}
 
 O resultados foram satisfatórios pois a aleta apresentou valores de:
+\vspace{-0.3cm}
 \begin{itemize}[leftmargin=2cm]
-    \item Efetividade \boldmath\(> 2\), não havendo a necessidade realizar melhorias;
-    \item Eficiência global de \boldmath\(98,43\,\%\).
+    \vspace{-0.2cm}\item Efetividade \boldmath\(> 2\), não havendo a necessidade realizar melhorias;
+    \vspace{-0.2cm}\item Eficiência global de \boldmath\(98,43\,\%\).
 \end{itemize}
