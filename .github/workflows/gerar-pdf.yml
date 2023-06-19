@@ -18,13 +18,13 @@ jobs:
       - name: Compilando latex
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: monografia.tex
+          root_file: report.tex
 
       - name: Renomeando o PDF
-        run: mv monografia.pdf monografia-${{github.ref_name}}.pdf
+        run: mv report.pdf report-${{github.ref_name}}.pdf
 
       - name: Publicando PDF
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: monografia-${{github.ref_name}}.pdf
+          files: report-${{github.ref_name}}.pdf
